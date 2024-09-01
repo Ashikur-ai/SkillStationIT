@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         primary_red: '#ff0000', // Example: Blue color
-        secondary: '#6c757d',
+        primary_green: '#1cab55',
         accent: 'rgb(255, 199, 0)',
         success: 'green',
         error: 'red',
@@ -17,6 +17,6 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui'),],
 }
 
