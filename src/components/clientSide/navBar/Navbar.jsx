@@ -56,18 +56,18 @@ const Navbar = () => {
           </div>
 
           <button className='bg-primary_red text-white px-2 py-1 rounded-lg'>All courses</button>
-          
+
         </div>
       </div>
 
 
       {/* Desktop view  */}
-      <div className='lg:flex items-center gap-8 w-11/12 justify-between mx-auto hidden'>
+      <div className='lg:flex items-center gap-8 max-w-7xl  mx-auto hidden justify-evenly'>
         <div>
           <img src="https://res.cloudinary.com/dramj404v/image/upload/v1725212272/SkillStationIT/icons/vvwbgeb55yfwukgfojnp.png" alt="" className='w-32' />
         </div>
 
-        <div>
+        <div className='hidden'>
           <input
             type="text"
             className="p-2 border rounded-xl px-20 bg-no-repeat"
@@ -80,14 +80,16 @@ const Navbar = () => {
         </div>
 
         <div>
-          <ul className='flex gap-8'>
+          <ul className='flex gap-4 text-[16px]'>
             {navli}
           </ul>
         </div>
 
-        <button className='bg-primary_green px-5 text-white py-1 rounded-lg'>
-          লগ-ইন
-        </button>
+        <div>
+          <button className='bg-primary_green px-5 text-white py-1 rounded-lg'>
+            লগ-ইন
+          </button>
+        </div>
       </div>
     </>
   );
